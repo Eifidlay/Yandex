@@ -1,11 +1,18 @@
 .emailblock-container {
-	margin: 0 auto;
-	margin-top: 20%;
-	margin-bottom: 20%;
-	width: 213px;
-	height: 131px;
+	display: flex;
+	width: 273px;
+	height: 182px;
 	border: 1px solid rgba(67, 67, 67, 0.5);
-	position: relative;
+	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+ 	-webkit-transform: translate(-50%, -50%);
+ 	-moz-transform: translate(-50%, -50%);
+ 	-ms-transform: translate(-50%, -50%);
+ 	-o-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+ 	border-radius: 6px;
+ 	box-shadow: 1px 1px 7px #666;
 }
 
 .email-block {
@@ -14,19 +21,24 @@
 }
 
 a.button {
-	width: 163px;
-	height: 26px;
+	width: 229px;
+	height: 32px;
 	text-decoration: none;
 	color: #000000;
 	background-color: #E4E4E4;
 	text-align: center;
 	display: block;
-	margin-left: 25px;
-	margin-right: 25px;
-	margin-top: 27px;
-	margin-bottom: 27px;
 	font: normal 14px arial;
-	padding-top: 7px;
+	padding-top: 15px;
+	position: absolute;
+	border-radius: 2px;
+ 	left: 50%;
+ 	top: 50%;
+ 	-webkit-transform: translate(-50%, -50%);
+ 	-moz-transform: translate(-50%, -50%);
+ 	-ms-transform: translate(-50%, -50%);
+ 	-o-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
 }
 
 a.button:not(.active):hover,
@@ -43,9 +55,8 @@ a.email {
 	font-size: 14px;
 	line-height: 16px;
 	text-decoration: none;
-	text-align: center;
-	margin-left: 21px;
 	color: #000000;
+	justify-content: flex-start;
 }
 
 a.email:not(.active):hover {
@@ -61,13 +72,10 @@ a.reg-email {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
-	align-items: center;
-	text-align: center;
 	text-decoration: none;
 	color: #808080;
 	float: right;
-	margin-left: 52px;
-	margin-top: 2px;
+	justify-content: flex-end;
 }
 
 a.reg-email:not(.active):hover {
@@ -83,12 +91,9 @@ a.get-plus {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
-	align-items: center;
-	text-align: center;
-	text-decoration: none;
+	justify-content: center;
 	color: #90BCFF;
-	align-content: space-between;
-	margin-left: 57px;
+	
 }
 
 a.get-plus:not(.active):hover {
